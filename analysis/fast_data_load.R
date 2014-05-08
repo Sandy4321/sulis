@@ -4,7 +4,7 @@ twitterdata=read.csv(twitter.data.file.name,sep=",",quote="",fill=TRUE,strip.whi
 crimedata=read.csv(crime.data.file.name,sep=",")
 
 #setup time vector
-timeslice = 24 #hours
+timeslice = 8 #hours
 sec.ts=60*60*timeslice
 start.time = max(min(twitterdata$ttime), min(crimedata$ctime))
 stop.time = min(max(twitterdata$ttime), max(crimedata$ctime))

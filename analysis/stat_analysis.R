@@ -24,7 +24,7 @@ cpairs= data.frame(val1,val2)
 
 
 entries = nrow(data.ts)
-window = 4
+window = 12
 
 
 sentiment.0 = data.ts$sentiment.ts
@@ -70,7 +70,7 @@ for (i in 0:window){
   }
   
   predictive.conds[[i+1]] =data.frame(as.factor(cpairs$val1),as.factor(cpairs$val2),condprob,indprob,diff)
-  names(predictive.conds[[i+1]]) = c('c','t','cp','ip')
+  names(predictive.conds[[i+1]]) = c('c','t','cp','ip','diff')
 }
 
 
