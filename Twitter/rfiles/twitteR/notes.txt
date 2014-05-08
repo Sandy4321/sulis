@@ -1,0 +1,29 @@
+Rstudio:
+	
+	packages to install (in order)
+		bitops
+		RCurl
+		digest
+		stringr
+		evaluate
+		httr
+		memoise
+		whisker
+		
+		devtools
+		rjson
+		bit64
+		
+		codetools
+		
+		*remove CRAN version of httr
+		library(devtools)
+		install_github("hadley/httr")
+		install_github("twitteR", username="geoffjentry")
+		
+		plyr
+		ggplot2
+		wordcloud
+		RColorBrewer
+		
+		
